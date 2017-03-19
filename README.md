@@ -45,3 +45,53 @@ session, which will kill Python.
 window will report messages regarding what files the web browser has
 requested, and how the mini-web server responded to those
 requests. You can ignore all of that.)
+
+### Editing cycle
+
+Since this site is now maanged via a "distributed revision control
+system" with multiple editors, care must be taken to ensure that one
+set of edits does not interfere with another set of edits.
+
+Distributed revision control systems rely on each contributor having
+a separate copy (called a "clone") of the master documents. Everyone
+can edit their copy independently, and then submit their edits for
+review, which then gets merged back into the master documents.
+
+Without going into a lot of detail, the general sequence for editing is:
+
+    $ git pull               # retrieves updates from master repository
+    $ git log                # view a record of what has been changed
+    [edit doc_1]             # edit any document
+	[edit doc_2]             # edit another
+	...
+	$ git status             # show the state of all changed documents
+	$ git add doc_1          # mark this document as ready to be included
+	$ git checkout -- doc_2  # undo changes to doc_2
+	$ git commit             # commit changes, provide a reason
+	[edit doc_2]             # edit the second document again
+	$ git status             # check the current state of all documents
+	$ git add doc_2          # mark doc_2 as ready for inclusion
+	$ git commit             # commit changes, provide a reason
+	$ git push               # send changes to the master repository
+
+The `pull` and `push` do not retrieve and send entire documents. Instead,
+they retrieve and send the changes to documents.
+
+Edit in "logical" sessions: In other words, don't make lots and lots
+of unrelated changes. Suppose, for example, you have three tasks which
+can be stated as
+
+* change the date for an event
+* revise orientation documentation
+* add a new page about important prison policy change
+
+Consider those as three very separate edits.  Start with the `git
+pull` to make sure you have the latest and greatest version of
+everything. Complete the first task then `git add` and `git commit`.
+Repeat the edit, `git add` and `git commit` for the second and third
+tasks. And then, finally, `git push` to push your changes out for
+others. (You can also do the `git push` after every commit if you wish.)
+The idea is that your commits provide a summary of what has been changed,
+and, if necessary, what must be undone.  Each commit is considered a
+revision and all of the edits made between one commit and the next can
+be rewound back to previous versions.
