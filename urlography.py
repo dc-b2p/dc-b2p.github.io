@@ -108,7 +108,7 @@ def main():
         if link.string and not href.startswith("mailto:"):
             destination.write(entry.format(link.string, href))
 
-    destination.write("</ol>\n</div>\n")
+    destination.write("\n</ol>\n</div>\n")
     return 0
 
 
