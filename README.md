@@ -95,3 +95,31 @@ The idea is that your commits provide a summary of what has been changed,
 and, if necessary, what must be undone.  Each commit is considered a
 revision and all of the edits made between one commit and the next can
 be rewound back to previous versions.
+
+## URLography
+
+`urlography.py` is a new (as of 2018.09.09) feature. It generates
+the list of links that is placed at the end of the newsletters.
+
+In order to use it on your systems there is a wee bit of setup
+involved.
+
+1. First, ensure you have `Python 3` installed. The latest stable
+   version is `Python 3.7.0 (default, Jul 15, 2018, 10:44:58)` but any
+   `Python 3` should do.
+2. The python modules `lxml`, `bs4` a.k.a. `Beautiful Soup 4`, and
+   `docopt` need to be installed and accessible to Python 3.
+3. Although not strictly necessary, it is probably best to put
+   `urlography.py` in your `~/bin/` directory or somewhere else
+   within your system path, and make it an executable with
+   `chmod 755 urlography.py`. Optionally, creating a symlink
+   or alias to it might be nice.
+   
+### Usage
+
+    urlography.py <source.html> [-o <destination.html>]
+
+This will read the file `<source.html>` and save the _urlography_
+(think "bibliography") to `<destination.html>`. If the optional `-o
+...` is not present, the urlography will be sent to the standard
+output (typically your screen).
