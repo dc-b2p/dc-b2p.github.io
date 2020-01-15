@@ -136,7 +136,7 @@ h6 {
 h1 {
     font-size: 250%;
     margin-bottom: .3em;
-    line-height: 1em;
+    line-height: 1;
 }
 
 h2 {
@@ -173,7 +173,7 @@ body {
     font-size: .9em;
     font-family: Verdana, Geneva, sans-serif;
     color: #202020;
-    line-height: 1.6em;
+    line-height: 1.6;
 }
 
 #header-section {
@@ -214,13 +214,13 @@ body {
 }
 
 #body-section {
-    line-height: 1.6em;
+    line-height: 1.6;
     float: right;
     width: 643px;
 }
 
 #body-section-wide {
-    line-height: 1.6em;
+    line-height: 1.6;
     width: 100%;
 }
 
@@ -231,7 +231,7 @@ body {
     font-size: 1em;
     font-family: Verdana, Geneva, sans-serif;
     color: ##525252;
-    line-height: 1.6em;
+    line-height: 1.6;
 }
 
 #footer {
@@ -376,7 +376,7 @@ div.error {
 
 .node-type-list dt {
     font-size: 200%;
-    line-height: 1em;
+    line-height: 1;
     font-family: Verdana, Geneva, sans-serif;
     margin-bottom: 10px;
 }
