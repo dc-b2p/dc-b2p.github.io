@@ -1,4 +1,5 @@
-# Welcome to Jekyll!
+# _config.yml - Jekyll configuration YAML file
+# Last modified by Kevin Cole <ubuntourist@hacdc.org> 2022.05.03 (kjc)
 #
 # This config file is meant for settings that affect your whole blog,
 # values which you are expected to set up once and rarely edit after
@@ -25,7 +26,6 @@
 #
 
 theme: null
-layout: default
 title: DC Books to Prisons
 description: >- # this means to ignore newlines until "baseurl:"
   DC Books to Prisons is a 501(c)(3) nonprofit organization which
@@ -37,6 +37,13 @@ url: "https://kjcole.github.io"
 baseurl: "/hyde" # the subpath of your site, e.g. /blog
 email: btopdc(at)gmail.com
 twitter_username: b2pdc
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: default
 
 # Exclude from processing.
 #
