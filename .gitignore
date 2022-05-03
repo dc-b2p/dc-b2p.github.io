@@ -1,3 +1,7 @@
 *.sh
 *.py
 _site
+!*.jpg
+!*.gif
+!*.png
+!*.pdf
