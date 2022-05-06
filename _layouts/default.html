@@ -1,0 +1,23 @@
+---
+---
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en" lang="en" dir="ltr">
+  <head>
+    {% include metadata.html %}
+  </head>
+
+  <body>
+    {% include header.html %}
+    <div id="content-region" class="wrapper clear-block">
+
+      {% include leftbar.html %}
+
+        {{ content }}
+
+    </div><!-- END CONTENT-REGION -->
+
+    {% include footer.html %}
+
+  </body>
+</html>
