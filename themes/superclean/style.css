@@ -2,9 +2,10 @@
  Theme Created By Mustardseed Media Inc.                                *
  * Need help customizing?  Drop us a line!  http://mustardseedmedia.com *
  *                                                                      *
- * Last modified by Kevin Cole <ubuntourist@hacdc.org> 2020.01.15 (kjc) *
+ * Last modified by Kevin Cole <ubuntourist@hacdc.org> 2022.05.05 (kjc) *
  *                                                                      *
  * 2020.01.15 KJC - Make source format consistent and sane.             *
+ * 2022.05.05 KJC - Add a .signature class for &ndash;John Smith        *
  *                                                                      *
  ************************************************************************/
 
@@ -486,6 +487,10 @@ ul.primary li a:hover {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.signature {
+    white-space: nowrap;
 }
 
 /* PAGERS */
