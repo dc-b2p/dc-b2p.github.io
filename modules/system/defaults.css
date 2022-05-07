@@ -45,15 +45,9 @@ th {
   visibility: hidden;
 }
 
-.clear-block {
-  display: inline-block;
-}
-
-/* Hides from IE-mac \*/
 * html .clear-block {
   height: 1%;
 }
 .clear-block {
   display: block;
 }
-/* End hide from IE-mac */
