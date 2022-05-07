@@ -6,6 +6,7 @@
  *                                                                      *
  * 2020.01.15 KJC - Make source format consistent and sane.             *
  * 2022.05.05 KJC - Add a .signature class for &ndash;John Smith        *
+ * 2022.05.07 KJC - Add a .btn class for the Donate button              *
  *                                                                      *
  ************************************************************************/
 
@@ -537,4 +538,25 @@ ul.primary li a:hover {
 #user-login input,
 #user-register input {
     font-size: 1.1em;
+}
+
+/* Donate button */
+
+.btn {
+    background: #df0000;
+    background-image: linear-gradient(to bottom, #df0000, #bf0000);
+    -webkit-border-radius: 14;
+    -moz-border-radius: 14;
+    border-radius: 14px;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    border: solid #af0000 1px;
+    text-decoration: none;
 }
