@@ -21,10 +21,16 @@ img {
 table {
   border-collapse: collapse;
 }
+tbody {
+  border-top: 1px solid #ccc;
+}
+tbody th {
+  border-bottom: 1px solid #ccc;
+}
 th {
   text-align: left; /* LTR */
   padding-right: 1em; /* LTR */
-  border-bottom: 3px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 /*
