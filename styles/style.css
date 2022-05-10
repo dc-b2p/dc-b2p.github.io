@@ -396,7 +396,7 @@ div.error {
 
 /* BLOCKS */
 
-#left-sidebar .block {
+.block {
     border: 1px solid #ccc;
     padding: 10px;
     font-size: .9em;

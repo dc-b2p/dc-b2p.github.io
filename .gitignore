@@ -5,3 +5,4 @@ _site
 !*.gif
 !*.png
 !*.pdf
+!*.svg

@@ -1,0 +1,51 @@
+.item1 {
+    grid-area: logo;
+}
+
+.item4 {
+    grid-area: donate;
+    display: flex;
+    align-self: end;
+    justify-content: center;
+}
+
+.item7 {
+    grid-area: subscribe;
+    display: flex;
+    align-self: start;
+    justify-content: center;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+    border-top: 1px solid #ccc;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.item6 {
+    grid-area: social;
+}
+
+.grid-container {
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        "logo    logo    donate"
+        "logo    logo    subscribe"
+        "menu    main    main"
+        "footer  footer  social";
+    gap: 30px;
+    padding: 0px;
+}
+
+.grid-container > div {
+    padding: 10px 0px;
+}
