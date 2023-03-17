@@ -2,11 +2,12 @@
  Theme Created By Mustardseed Media Inc.                                *
  * Need help customizing?  Drop us a line!  http://mustardseedmedia.com *
  *                                                                      *
- * Last modified by Kevin Cole <ubuntourist@hacdc.org> 2022.05.05 (kjc) *
+ * Last modified by Kevin Cole <ubuntourist@hacdc.org> 2023.03.17 (kjc) *
  *                                                                      *
  * 2020.01.15 KJC - Make source format consistent and sane.             *
  * 2022.05.05 KJC - Add a .signature class for &ndash;John Smith        *
  * 2022.05.07 KJC - Add a .btn class for the Donate button              *
+ * 2023.03.17 KJC - Add .image & .explanation classes for nudity        *
  *                                                                      *
  ************************************************************************/
 
@@ -559,4 +560,19 @@ ul.primary li a:hover {
     padding: 10px 20px 10px 20px;
     border: solid #af0000 1px;
     text-decoration: none;
+}
+
+/* Nudity */
+
+.nude {
+    overflow: auto;
+}
+
+.image {
+    width: 536px;
+    float: left;
+}
+
+.explanation {
+    float: left;
 }
