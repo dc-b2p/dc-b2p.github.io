@@ -567,25 +567,20 @@ ul.primary li a:hover {
 
 /* Nudity */
 
-/*
-.nude {
-    overflow: auto;
-    column-count: 4;
+.nudes {
+    display: flex;
+    flex-wrap: wrap;
 }
-*/
 
 figure {
     border: 1px #777777 solid;
     background-color: #f3f3f3;
+    box-shadow: 5px 5px 1px lightblue;
     padding: 4px;
-/*  margin: auto; */
-/*  width: 536px; */
-/*  float: left; */
 }
 
 figcaption {
-/*  float: left; */
-    padding: 2px;
+    padding: 10px;
 }
 
 .portrait {
