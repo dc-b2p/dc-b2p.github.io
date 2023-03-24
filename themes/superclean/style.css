@@ -8,6 +8,9 @@
  * 2022.05.05 KJC - Add a .signature class for &ndash;John Smith        *
  * 2022.05.07 KJC - Add a .btn class for the Donate button              *
  * 2023.03.17 KJC - Add .image & .explanation classes for nudity        *
+ * 2023.03.23 KJC - Changed .image & .explanation to figure and         *
+ *                  figcaption                                          *
+ * 2023.03.23 KJC - Added .portrait and .landscape classes              *
  *                                                                      *
  ************************************************************************/
 
@@ -564,15 +567,31 @@ ul.primary li a:hover {
 
 /* Nudity */
 
+/*
 .nude {
     overflow: auto;
+    column-count: 4;
+}
+*/
+
+figure {
+    border: 1px #777777 solid;
+    background-color: #f3f3f3;
+    padding: 4px;
+/*  margin: auto; */
+/*  width: 536px; */
+/*  float: left; */
 }
 
-.image {
-    width: 536px;
-    float: left;
+figcaption {
+/*  float: left; */
+    padding: 2px;
 }
 
-.explanation {
-    float: left;
+.portrait {
+    width: 288px; /* by 512px */
+}
+
+.landscape {
+    width: 512px; /* by 288px */
 }
