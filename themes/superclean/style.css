@@ -579,13 +579,13 @@ figure {
 }
 
 figure.acceptable {
-    border: 1px #00ff00 solid;
-    box-shadow: 5px 5px 1px #cfffcf;
+    border: 2px #00ff00 solid;
+    box-shadow: 8px 8px 3px #cfffcf;
 }
 
 figure.unacceptable {
-    border: 1px #ff0000 solid;
-    box-shadow: 5px 5px 1px #ffcfcf;
+    border: 2px #ff0000 solid;
+    box-shadow: 8px 8px 3px #ffcfcf;
 }
 
 figure.portrait {
