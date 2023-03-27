@@ -574,20 +574,52 @@ ul.primary li a:hover {
 }
 
 figure {
-    border: 1px #777777 solid;
     background-color: #f3f3f3;
-    box-shadow: 5px 5px 1px lightblue;
     padding: 4px;
 }
 
-figcaption {
-    padding: 10px;
+figure.acceptable {
+    border: 1px #00ff00 solid;
+    box-shadow: 5px 5px 1px #cfffcf;
 }
 
-.portrait {
+figure.unacceptable {
+    border: 1px #ff0000 solid;
+    box-shadow: 5px 5px 1px #ffcfcf;
+}
+
+figure.portrait {
     width: 288px; /* by 512px */
 }
 
-.landscape {
+figure.landscape {
     width: 512px; /* by 288px */
+}
+
+ul {
+    list-style: none;
+    position: relative;  /* needed to set position to absolute in the next rule. */
+    padding: 2px 5px 2px 30px;
+}
+
+ul.unacceptable li:before
+{
+    position: absolute;
+/*  left: -0.8em;        /* Adjust to move "bullet" left (-) or right (+) */
+    left: 0px;           /* Adjust to move "bullet" left (-) or right (+) */
+    content: '\002718';  /* 10008 */
+    color: red;
+    font-size: 200%;
+/*  margin: 0 1em; */
+}
+
+ul.acceptable li:before
+{
+    position: absolute;
+/*  left: -0.8em;        /* Adjust to move "bullet" left (-) or right (+) */
+    left: -2px;          /* Adjust to move "bullet" left (-) or right (+) */
+    content: "\01fbb1";  /* 129969 */
+    color: green;
+    font-size: 180%;
+/*  margin: 0 1em; */
 }
