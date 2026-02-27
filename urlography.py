@@ -95,11 +95,11 @@ def main():
         destination = sys.stdout
 
     destination.write("""\n<div id="links" style="font-size:13px; page-break-inside:avoid;">""")
-    destination.write("""\n<hr />""")
+    destination.write("""\n<hr>""")
     destination.write("""\n<h3>Links</h3>""")
     destination.write("""\n<ol>""")
 
-    entry  = """\n<li>{0}<br />"""
+    entry  = """\n<li>{0}<br>"""
     entry += """\n<a class="a" """
     entry += """\n   href="{1}">{1}</a></li>"""
 
