@@ -32,6 +32,9 @@ th {
   padding-right: 1em; /* LTR */
   border-bottom: 1px solid #ccc;
 }
+iframe {
+  overflow: hidden;
+}
 
 /*
 ** Markup free clearing
